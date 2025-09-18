@@ -28,8 +28,6 @@ public class PythagoreanService {
             return pythagoreanValuesMapper.toDto(pythagoreanValues);
         }
 
-        //create if statement if value exist in database and retrieve it if it exist
-
         return calculateLegs(squareRoot, value);
     }
 
@@ -59,8 +57,6 @@ public class PythagoreanService {
                 left++;
             }
         }
-        System.out.println("NOT SUCCESS");
         return new PythagoreanValuesResponse();
     }
-
 }
