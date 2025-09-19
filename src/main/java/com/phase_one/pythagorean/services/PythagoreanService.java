@@ -15,9 +15,9 @@ public class PythagoreanService {
     private final PythagoreanValuesMapper pythagoreanValuesMapper;
 
     public PythagoreanValuesResponse calculatePythagoreanSides(Long value) {
-        double squareRoot = Math.sqrt(value);
+        long squareRoot = (long)Math.sqrt(value);
 
-        if (squareRoot != Math.floor(squareRoot)) {
+        if (squareRoot * squareRoot != value) {
             return new PythagoreanValuesResponse();
         }
 
@@ -32,12 +32,11 @@ public class PythagoreanService {
 
     private PythagoreanValuesResponse calculateLegs(double c, long cSquared) {
         long left = 1L;
-        long right = (long)c - 1;
+        long right = (long)c-1;
 
-        while(left < right){
+        while(left <= right){
             long computed = (left * left) + (right * right);
             if(cSquared == computed){
-                System.out.println("SUCCESS");
                 PythagoreanValues pythagoreanValues =  PythagoreanValues.builder()
                         .a(left)
                         .b(right)
