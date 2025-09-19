@@ -24,7 +24,6 @@ public class PythagoreanService {
         PythagoreanValues pythagoreanValues = pythagoreanValuesRepository.findPythagoreanValuesByValue(value);
 
         if(pythagoreanValues != null) {
-            System.out.println("Im in the db");
             return pythagoreanValuesMapper.toDto(pythagoreanValues);
         }
 
