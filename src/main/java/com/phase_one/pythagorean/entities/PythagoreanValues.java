@@ -24,7 +24,7 @@ public class PythagoreanValues {
     @Column(name = "c")
     private Long c;
 
-    @Column(name = "value")
+    @Column(name = "value", unique = true)
     private Long value;
 
     @Column(name = "average")
