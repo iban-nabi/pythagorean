@@ -2,14 +2,11 @@ package com.phase_one.pythagorean.controllers;
 
 import com.phase_one.pythagorean.dtos.PythagoreanValuesResponse;
 import com.phase_one.pythagorean.services.PythagoreanService;
-import jakarta.validation.ConstraintViolationException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import jakarta.validation.constraints.Min;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Map;
 
 @AllArgsConstructor
 @Validated
