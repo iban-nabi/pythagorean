@@ -32,7 +32,7 @@ public class PythagoreanService {
 
     private PythagoreanValuesResponse calculateLegs(long c, long value) {
         long left = 1L;
-        long right = (long)c-1;
+        long right = c-1;
 
         while(left <= right){
             long computed = (left * left) + (right * right);
