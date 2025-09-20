@@ -30,18 +30,18 @@ public class PythagoreanService {
         return calculateLegs(squareRoot, value);
     }
 
-    private PythagoreanValuesResponse calculateLegs(double c, long cSquared) {
+    private PythagoreanValuesResponse calculateLegs(long c, long value) {
         long left = 1L;
         long right = (long)c-1;
 
         while(left <= right){
             long computed = (left * left) + (right * right);
-            if(cSquared == computed){
+            if(value == computed){
                 PythagoreanValues pythagoreanValues =  PythagoreanValues.builder()
                         .a(left)
                         .b(right)
-                        .c((long)c)
-                        .value(cSquared)
+                        .c(c)
+                        .value(value)
                         .average((left + right + c) / 3.0)
                         .build();
 
@@ -49,7 +49,7 @@ public class PythagoreanService {
                 return pythagoreanValuesMapper.toDto(pythagoreanValues);
             }
 
-            if(computed > cSquared){
+            if(computed > value){
                 right--;
             } else {
                 left++;
