@@ -12,7 +12,8 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://127.0.0.1:5500", "http://localhost:5500")
+                        // enable access from live server hosted website or file://
+                        .allowedOrigins("http://127.0.0.1:5500", "http://localhost:5500", "null")
                         .allowedMethods("GET")
                         .allowCredentials(true);
             }
