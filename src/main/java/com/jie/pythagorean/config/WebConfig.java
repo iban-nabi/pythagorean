@@ -1,4 +1,4 @@
-package com.phase_one.pythagorean.config;
+package com.jie.pythagorean.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

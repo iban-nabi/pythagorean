@@ -1,4 +1,4 @@
-package com.phase_one.pythagorean.exception_handler;
+package com.jie.pythagorean.exception_handler;
 
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.ResponseEntity;

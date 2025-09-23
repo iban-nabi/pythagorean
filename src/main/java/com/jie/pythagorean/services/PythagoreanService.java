@@ -1,9 +1,9 @@
-package com.phase_one.pythagorean.services;
+package com.jie.pythagorean.services;
 
-import com.phase_one.pythagorean.dtos.PythagoreanValuesResponse;
-import com.phase_one.pythagorean.entities.PythagoreanValues;
-import com.phase_one.pythagorean.mappers.PythagoreanValuesMapper;
-import com.phase_one.pythagorean.repositories.PythagoreanValuesRepository;
+import com.jie.pythagorean.dtos.PythagoreanValuesResponse;
+import com.jie.pythagorean.entities.PythagoreanValues;
+import com.jie.pythagorean.mappers.PythagoreanValuesMapper;
+import com.jie.pythagorean.repositories.PythagoreanValuesRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

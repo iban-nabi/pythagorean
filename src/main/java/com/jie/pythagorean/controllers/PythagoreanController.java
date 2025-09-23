@@ -1,7 +1,7 @@
-package com.phase_one.pythagorean.controllers;
+package com.jie.pythagorean.controllers;
 
-import com.phase_one.pythagorean.dtos.PythagoreanValuesResponse;
-import com.phase_one.pythagorean.services.PythagoreanService;
+import com.jie.pythagorean.dtos.PythagoreanValuesResponse;
+import com.jie.pythagorean.services.PythagoreanService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

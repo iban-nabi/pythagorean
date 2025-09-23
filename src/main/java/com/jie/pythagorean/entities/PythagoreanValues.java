@@ -1,4 +1,4 @@
-package com.phase_one.pythagorean.entities;
+package com.jie.pythagorean.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

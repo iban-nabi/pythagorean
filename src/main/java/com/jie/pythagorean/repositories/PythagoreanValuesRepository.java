@@ -1,6 +1,6 @@
-package com.phase_one.pythagorean.repositories;
+package com.jie.pythagorean.repositories;
 
-import com.phase_one.pythagorean.entities.PythagoreanValues;
+import com.jie.pythagorean.entities.PythagoreanValues;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PythagoreanValuesRepository extends JpaRepository<PythagoreanValues, Long> {

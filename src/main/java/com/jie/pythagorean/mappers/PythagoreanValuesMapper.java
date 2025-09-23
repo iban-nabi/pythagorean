@@ -1,7 +1,7 @@
-package com.phase_one.pythagorean.mappers;
+package com.jie.pythagorean.mappers;
 
-import com.phase_one.pythagorean.dtos.PythagoreanValuesResponse;
-import com.phase_one.pythagorean.entities.PythagoreanValues;
+import com.jie.pythagorean.dtos.PythagoreanValuesResponse;
+import com.jie.pythagorean.entities.PythagoreanValues;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

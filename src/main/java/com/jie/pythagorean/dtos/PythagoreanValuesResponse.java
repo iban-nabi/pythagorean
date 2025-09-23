@@ -1,4 +1,4 @@
-package com.phase_one.pythagorean.dtos;
+package com.jie.pythagorean.dtos;
 
 import lombok.*;
 
